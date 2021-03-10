@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="480.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="email.login.FXMLDocumentController">
+   <children>
+      <TextField fx:id="txt1" layoutX="169.0" layoutY="193.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #4285F4; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField layoutX="169.0" layoutY="252.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #4285F4; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="203.0" layoutY="363.0" mnemonicParsing="false" onAction="#Show_Message" prefHeight="43.0" prefWidth="75.0" style="-fx-background-color: #4285F4;" text="Login" textFill="WHITE" />
+      <Text layoutX="210.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to continue to Email" />
+      <Hyperlink layoutX="167.0" layoutY="220.0" text="Forgot email?" textFill="#4285f4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="166.0" layoutY="280.0" text="Forgot password?" textFill="#4285f4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Hyperlink>
+      <Text fill="#4285f4" layoutX="186.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#db4437" layoutX="209.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#f4b400" layoutX="227.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#4285f4" layoutX="246.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#0f9d58" layoutX="264.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="l">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#db4437" layoutX="270.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="#4285f4" glyphName="USER" layoutX="150.0" layoutY="213.0" size="20" />
+      <FontAwesomeIconView fill="#4285f4" glyphName="KEY" layoutX="148.0" layoutY="272.0" size="20" />
+      <FontAwesomeIconView glyphName="GOOGLE" layoutX="218.0" layoutY="514.0" size="45" text="" />
+      <TextField layoutX="66.0" layoutY="314.0" prefHeight="19.0" prefWidth="237.0" promptText="Not your computer? Use Guest mode to sign in privately." style="-fx-background-color: transparent;">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <Hyperlink layoutX="69.0" layoutY="324.0" text="Learn more" textFill="#4285f4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Hyperlink>
+      <TextField layoutX="434.0" layoutY="547.0" prefHeight="19.0" prefWidth="39.0" promptText="Terms " style="-fx-background-color: transparent;">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="386.0" layoutY="547.0" prefHeight="19.0" prefWidth="48.0" promptText="Privacy" style="-fx-background-color: transparent;">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="347.0" layoutY="547.0" prefHeight="19.0" prefWidth="39.0" promptText="Help" style="-fx-background-color: transparent;">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="46.0" prefWidth="480.0">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <children>
+            <FontAwesomeIconView glyphName="MINUS" onMouseClicked="#min" size="1.3em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="CIRCLE" onMouseClicked="#max" size="1.3em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="CLOSE" onMouseClicked="#close" size="1.3em">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
